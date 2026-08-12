@@ -1,36 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="utf-8">
-    <title>MunProoo's Portfolio</title>
+    <title>문주영 | Backend Engineer</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Backend Engineer, Go, MunProoo, 문주영" name="keywords">
+    <meta content="문주영 Backend Engineer 포트폴리오" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', 'Roboto', sans-serif; }
+        .hero-name {
+            color: #fff !important;
+            -webkit-text-stroke: 0;
+            letter-spacing: -0.02em;
+        }
+        .resume-list {
+            margin: 0 0 1rem;
+            padding-left: 1.1rem;
+        }
+        .resume-list li {
+            margin-bottom: .45rem;
+        }
+        .project-tech {
+            display: block;
+            color: #6c757d;
+            font-size: .875rem;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Free</span>Folio</h1>
+            <h1 class="m-0 display-5"><span class="text-primary">Mun</span>Prooo</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -39,37 +52,15 @@
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#qualification" class="nav-item nav-link">Career</a>
                 <a href="#skill" class="nav-item nav-link">Skill</a>
                 <a href="#projects" class="nav-item nav-link">Projects</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <!-- <a href="#testimonial" class="nav-item nav-link">Review</a> -->
-                <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
-                <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="https://github.com/MunProoo" target="_blank" class="btn btn-outline-primary d-none d-lg-block">GitHub</a>
         </div>
     </nav>
     <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
 
 
     <!-- Header Start -->
@@ -77,16 +68,17 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded shadow-sm" src="img/profile.jpeg" alt="">
+                    <img class="img-fluid w-100 rounded shadow-sm" src="img/profile.jpeg" alt="문주영 프로필">
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">MunProoo</h1>
+                    <h1 class="display-3 mb-2 hero-name">문주영</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Web Developer, Backend Developer, Blockchain Developer</div>
+                    <div class="typed-text d-none">Backend Engineer, Go Developer</div>
+                    <p class="text-white mt-3 mb-0">동기화 병목 · 단말 연동 · VMS 확장 · Live 미디어</p>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://drive.google.com/file/d/1RRXaSR1ggwekal4Uvw2MKpGHAa_mOTj4/view?usp=drive_link" target="_blank" class="btn btn-outline-light mr-5">Download Resume</a>
-                        
+                        <a href="https://github.com/MunProoo" target="_blank" class="btn btn-outline-light mr-3">GitHub</a>
+                        <a href="#projects" class="btn btn-light">Projects</a>
                     </div>
                 </div>
             </div>
@@ -104,32 +96,23 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpeg" alt="">
+                    <img class="img-fluid rounded w-100" src="img/about.jpeg" alt="About">
                 </div>
                 <div class="col-lg-7">
-                    <h3 class="mb-4">Backend Developer</h3>
-                    <p>안녕하세요. 꾸준히 성장하는 개발자 <b>문주영(MunProoo)</b>입니다.<br> 
-
-                        눈에 보이지 않아도, 뒤에서 든든하게 받쳐주는 포지션을 좋아합니다. 그래서 백엔드를 좋아합니다.<br>
-                        <br>
-                        REST API, gRPC를 통한 다양한 데이터 통신을 다루고 있습니다.<br>
-                        
-                        서버 내 프로세스들의 병렬성과 동시성을 고려하며 코드를 작성하려 노력합니다.<br>
-                        
-                        최근에는 디자인 패턴과 클린 코드, 클린 아키텍처를 염두에 두고 개발을 해나가고 있습니다.<br>
-                        
-                        문제에 대해 단기적인 해결책보다는 지속적으로 해결가능한 방안을 제시하는 개발자가 되고 싶습니다.<br>
-                        <br>
-                        혼자선 아무 것도 못 한다고 생각합니다.<br> 협업과 공존이 당연한 환경을 꿈꾸고 있습니다. <br>
-                        <br>
-                        <b>먼저 실천해 나가겠습니다.</b></p>
+                    <h3 class="mb-4">Backend Engineer</h3>
+                    <p>
+                        Go 백엔드 엔지니어로서 <b>2022.04 ~ 현재</b> 출입통제·보안 솔루션의
+                        <b>동기화 병목·단말 연동·외부 VMS 확장</b>을 설계·개선해 왔습니다.<br><br>
+                        DB round-trip을 배치·캐시·비동기 큐로 줄이고, 재전송 로그 멱등·벤더 추상화·Live 미디어까지 다루며
+                        <b>운영 안정성과 확장 비용</b>을 함께 챙겼습니다.
+                    </p>
                     <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">문주영(MunProoo)</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">1994-05-04</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">2 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">문주영 (MunProoo)</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>GitHub: <a class="text-secondary" href="https://github.com/MunProoo" target="_blank" rel="noopener noreferrer">github.com/MunProoo</a></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">2022.04 ~ 현재</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">mjo5178@gmail.com</span></h6></div>
                     </div>
-                    <a href="https://github.com/MunProoo" target="_blank" class="btn btn-outline-primary mr-4">Github</a>
+                    <a href="https://github.com/MunProoo" target="_blank" class="btn btn-outline-primary mr-4">GitHub</a>
                     <a href="https://munprooo.github.io/" target="_blank" class="btn btn-outline-primary">Blog</a>
                 </div>
             </div>
@@ -142,44 +125,33 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Career</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
+                    <h3 class="mb-4">Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Java & Spring</h5>
                             <p class="mb-2"><strong>그린컴퓨터</strong> | <small>2021 - 2022</small></p>
-                            <p>Java & Spring Framework 개발 학습 <br>
-                                <a href="https://github.com/MunProoo/SpringProject" target="_blank"> 👉repo </a></p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                <h5 class="font-weight-bold mb-1">정보통신공학부</h5>
-                                <p class="mb-2"><strong>충북대학교</strong> | <small>2014 - 2021</small></p>
-                                <p>통신회로 및 시스템설계 연구소 학부연구생으로 학내 논문 <br>
-                                    <a href="https://github.com/MunProoo/Realizing_QCNN" target="_blank"> 👉repo </a></p>
-                            </div>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">정보통신공학부</h5>
+                            <p class="mb-2"><strong>충북대학교</strong> | <small>2014 - 2021</small></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
+                    <h3 class="mb-4">Experience</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Developer</h5>
-                            <p class="mb-2"><strong>Unioncommunity</strong> | <small>2022 - </small></p>
-                            <p>생체인식 단말기 및 소프트웨어 제공업체<br>
-                                매출액 359억원, 사원 수 130명<br>
-                                <br>
-                                <b>주요 업무</b> : 생체인식 출입 통제 기기와 연동하는 웹 솔루션의 유지보수<br>
-                                
-                                1. TCP/IP를 통한 기기와의 통신<br>
-                                2. 인증 로그를 이용한 근태 관리<br>
-                                3. 외부 업체와의 연동</p>
+                            <h5 class="font-weight-bold mb-1">유니온 바이오메트릭스 | Backend / Server Engineer</h5>
+                            <p class="mb-2"><small>2022.04.11 ~ 현재</small></p>
+                            <p>출입통제·보안 솔루션(Alpeta) 온프레미스/클라우드 서버 및 연관 서비스 개발</p>
                         </div>
                     </div>
                 </div>
@@ -194,66 +166,28 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Core Skills</h1>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Go</h6>
-                            <!-- <h6 class="font-weight-bold">95%</h6> -->
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JavaScript</h6>
-                            <!-- <h6 class="font-weight-bold">85%</h6> -->
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Java</h6>
-                            <!-- <h6 class="font-weight-bold">70%</h6> -->
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5 class="font-weight-bold mb-2">Backend</h5>
+                    <p class="mb-0 text-secondary">Go, Gin, REST, BFF/Aggregator, WebSocket, SSE</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">MariaDB</h6>
-                            <!-- <h6 class="font-weight-bold">80%</h6> -->
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">MSSQL</h6>
-                            <!-- <h6 class="font-weight-bold">80%</h6> -->
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Docker</h6>
-                            <!-- <h6 class="font-weight-bold">85%</h6> -->
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+                <div class="col-md-6 mb-4">
+                    <h5 class="font-weight-bold mb-2">Data & Async</h5>
+                    <p class="mb-0 text-secondary">PostgreSQL, MariaDB, MSSQL, Oracle, Redis/Valkey, 인메모리 캐시, Thread-safe Queue, NATS</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5 class="font-weight-bold mb-2">Integration</h5>
+                    <p class="mb-0 text-secondary">TCP/바이너리 프로토콜, MQTT(단말·현장 상태), VMS REST·SSE 연동, 멱등·재시도</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5 class="font-weight-bold mb-2">Realtime / Media</h5>
+                    <p class="mb-0 text-secondary">WebRTC, HLS, FFmpeg</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5 class="font-weight-bold mb-2">Infra</h5>
+                    <p class="mb-0 text-secondary">Docker</p>
                 </div>
             </div>
         </div>
@@ -268,100 +202,107 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Projects</h1>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-start">
                 <div class="col-lg-6">
-                    <h3 class="mb-4">Jobs</h3>
+                    <h3 class="mb-4">Career</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">신규 기능 개발 (전광판)</h5>
-                            <p class="mb-2"><strong>2024-02</strong> | <strong>서버, UI (100%)</strong></p>
-                            <p>기술 스택 : <br>Go, Javascript, MariaDB, gRPC, REST API, WebSocket, Git Lab <br>
-                                <p>- 지정한 출입 통제 기기들의 인증 동작 시 해당 사진을 실시간으로 보여주는 기능</p>
-                               <p>- 관리자의 제어 기능 (로고 이미지 및 현장 이름 )</p> 
-                                <p>- 세션 끊기지 않도록 새로운 권한 생성 및 적용    </p>
-                            </p>
+                            <h5 class="font-weight-bold mb-1">Alpeta | 대량 인사 동기화·DB 접근 개선</h5>
+                            <p class="mb-2"><small>역할: Backend 개발 — 동기화·DB 병목 설계 주도 및 구현</small></p>
+                            <ul class="resume-list">
+                                <li>사용자별 단건 CreateAt 조회를 <b>500건 단위 IN 배치</b>로 전환해 DB round-trip을 <b>N → ⌈N/500⌉</b>으로 축소</li>
+                                <li>기존 사용자 1,000명 동기화 기준 CreateAt 조회를 <b>1,000회 → 2회</b>로 개선</li>
+                                <li>사용자·단말 동기화와 인증·HealthID 로그를 <b>Thread-safe 큐</b>로 분리하고 50~100ms pacing을 적용해 API I/O와 DB 저장 경로를 분리</li>
+                                <li>Device–Door 매핑 인메모리 캐시로 반복 DB 조회를 제거하고 기존 데이터의 중복 Insert를 방어</li>
+                            </ul>
+                            <p><b>결과:</b> CreateAt 조회 경로의 DB 왕복을 최대 약 1/500 수준으로 줄이고, 동기화·로그 반영의 핫패스와 저장 경로를 분리</p>
+                            <span class="project-tech">Go, PostgreSQL, Batch Query, In-memory Cache, Thread-safe Queue</span>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">신규 기능 개발 (출입 통제 기기 원격 제어 기능 확장)</h5>
-                            <p class="mb-2"><strong>2023-11</strong> | <strong>서버 (100%)</strong></p>
-                            <p>기술 스택 : <br>Go, Javascript, MariaDB, gRPC, REST API, Git Lab <br>
-                                <p>- 웹 솔루션에서 출입 통제 기기들의 모든 옵션 설정 가능하도록 기능 확장</p>
-                               <p>- 각 기기 별로 원격 제어 기능을 다르게 보여주고, 없는 기능에 대한 제어 명령 전송 방지</p> 
-                            </p>
+                            <h5 class="font-weight-bold mb-1">Alpeta Cloud | API·BFF·단말 프로토콜 ★운영 신뢰성</h5>
+                            <p class="mb-2"><small>역할: Backend 개발 — Aggregator(BFF)·서비스 API, 단말 TCP/tcp-middleware 연동 담당</small></p>
+                            <ul class="resume-list">
+                                <li>User·Device·Data를 묶는 <b>Aggregator API</b>를 구현해 대시보드·조회용 단일 API 제공</li>
+                                <li>출입로그 재전송에 <b>의미 키 + 시간 윈도우 멱등</b>을 적용해 동일 청크의 중복 ingest·후속 수집 방지</li>
+                                <li>단말 상태를 <b>MQTT</b>로 수신하고 <b>NATS</b>로 모니터링 등 마이크로서비스에 전파하는 이벤트 경로 구성</li>
+                            </ul>
+                            <p><b>결과:</b> 재전송이 잦은 단말 환경에서도 로그 적재와 후속 처리가 한 번만 반영되도록 서버 측 계약을 안정화</p>
+                            <span class="project-tech">Go, Gin, PostgreSQL, Redis/Valkey, NATS, MQTT, TCP, protobuf, REST</span>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">신규 기능 개발 (VMS 연동)</h5>
-                            <p class="mb-2"><strong>2023-06 ~ 2023-12</strong> | <strong>서버,UI (100%)</strong></p>
-                            <p>기술 스택 : <br>Go, Javascript, MariaDB, gRPC, REST API, Git Lab <br>
-                                <p>- 얼굴 인식 출입 통제 기기의 RTSP 스트림을 web을 통해 보여주는 기능. ref: https://github.com/deepch/RTSPtoWebRTC</p>
-                               <p>- 녹화된 영상을 통해 사용자 인증 시의 영상을 보여주는 기능</p> 
-                               <p>- (주) Innodep VMS 연동 (REST API)</p> 
-                            </p>
+                            <h5 class="font-weight-bold mb-1">Alpeta | 외부 VMS 연동 프로세서 ★확장성</h5>
+                            <p class="mb-2"><small>역할: Backend 개발 — 연동 공통 인터페이스·벤더 어댑터 설계 및 구현</small></p>
+                            <ul class="resume-list">
+                                <li>단건 VMS 커스텀을 <code>SystemIntegration</code> 계층으로 분리하고, systemType별 세션·디바이스·매핑·이벤트/SSE 클라이언트를 공통 매니저로 설계</li>
+                                <li><b>한화·Emstone·CyberLink 3개 VMS</b>를 동일 어댑터 구조로 구현</li>
+                            </ul>
+                            <p><b>결과:</b> 신규 벤더 추가 시 코어 수정 없이 연동 모듈을 추가하고, 변경 범위를 연동 계층으로 한정</p>
+                            <span class="project-tech">Go, REST, SSE</span>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">출입 신청 키오스크 개발</h5>
-                            <p class="mb-2"><strong>2023-02 ~ 2023-04</strong> | <strong>서버,UI (50%)</strong></p>
-                            <p>기술 스택 : <br>Go, Javascript, MariaDB,MSSQL,Oracle, gRPC, REST API, Git Lab <br>
-                                <p>- 현장, 건물의 출입 신청을 키오스크를 통해 방문자가 스스로 할 수 있는 기능</p>
-                               <p>- 카메라 얼굴 캡쳐 → 캡쳐 이미지 유효성 확인 → 출입 통제 기기에 입력한 정보 전송</p> 
-                            </p>
+                            <h5 class="font-weight-bold mb-1">MediaServer | Live 미디어 서빙</h5>
+                            <p class="mb-2"><small>역할: Backend 개발 — Live 송출·녹화 파이프라인 설계·구현</small></p>
+                            <ul class="resume-list">
+                                <li>오픈소스 기반으로 <b>RTSP → WebRTC</b> 실시간 시청 경로를 구성</li>
+                                <li><b>FFmpeg</b> 녹화 후 <b>HLS</b>로 녹화본 재생을 제공하고 다중 스트림·모니터링 운영</li>
+                            </ul>
+                            <p><b>결과:</b> Live(저지연 WebRTC)와 녹화 재생(HLS) 경로를 분리해 시청·보관 요구를 동시에 충족</p>
+                            <span class="project-tech">Go, Gin, pion/WebRTC, FFmpeg, HLS, WebSocket</span>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">솔루션 유지보수 및 커스텀 개발</h5>
-                            <p class="mb-2"><strong>2022-06 ~ </strong> | <strong>서버,UI (20%)</strong></p>
-                            <p>기술 스택 : <br>Go, Javascript, MariaDB,MSSQL,Oracle, gRPC, REST API, Git Lab <br>
-                                <p>- 출입 통제 기기 찾기 고도화</p>
-                               <p>- 커스텀 개발 (사이트별 인사동기화,인증로그 동기화 등 API 개발)</p> 
-                               <p>- Oracle DB 추가 등</p> 
-                            </p>
+                            <h5 class="font-weight-bold mb-1">bioid_service | 멀티테넌트 얼굴 인증</h5>
+                            <p class="mb-2"><small>역할: Backend 개발 — 얼굴 인증 SDK 연동 및 외부 연동 API 설계·구현</small></p>
+                            <ul class="resume-list">
+                                <li>얼굴 인증 SDK로 웹캠 얼굴 등록·인증을 연동하고, 그룹웨어 등 외부 시스템용 <b>REST API·인증 결과 콜백</b> 구현</li>
+                                <li>ID/PW·얼굴 하이브리드·2차 인증, 안티스푸핑, 이미지 1:1 비교·외부 DB 연동을 지원하는 공통 마이크로서비스 구성</li>
+                            </ul>
+                            <p><b>결과:</b> 그룹웨어에 종속되지 않는 독립 인증 서비스로 분리해 여러 시스템이 동일 API로 연동 가능하도록 구현</p>
+                            <span class="project-tech">Go, Gin, GORM, JWT/API Key, 얼굴 인증 SDK</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="mb-4">Individual</h3>
+                    <h3 class="mb-4">Personal</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">업무관리 서비스</h5>
-                            <p class="mb-2"><strong>2023.11 - 2024.01</strong> | <strong>서버,UI (100%)</strong></p>
-                            <p>기술 스택 : <br>Go ,Echo Framework, eXBuilder6, JWT, Argon2, Docker, Git Hub<br>
-                                <p>- 일일 업무 보고를 기록하면 한 주간의 업무 보고를 모아 자동으로 주간 보고로 만들어주는 서비스</p>
-                               <p>- 목적 : 레거시로 가득한 개인 작업물 리팩토링</p> 
-                               <p>변경점 : <br>
-                                1. 클린 아키텍처 적용<br>
-                                2. Echo 프레임워크 사용<br>
-                                3. 고루틴을 이용한 로깅 <br>
-                                4. Argon2 암호화 적용<br>
-                                5. JWT 사용<br>
-                                6. Nginx 사용<br>
-                                7. 도커를 이용한 컨테이너 배포<br>
-                                8. 깃허브 액션을 사용한 CI 적용<br>
-                                9. Swagger를 통한 API 문서 제작</p> 
-                                <p><a href="https://github.com/MunProoo/bsmgRefactoring" target="_blank">👉repo</a></p>
+                            <h5 class="font-weight-bold mb-1">WebRTC-Test | SFU · 화상 · 실시간 채팅</h5>
+                            <p>
+                                Pion SFU, WebSocket 시그널링, DataChannel 채팅 fan-out 및 선택 peer 수신·화면공유 구현<br>
+                                <span class="project-tech">Go, Pion WebRTC, WebSocket, DataChannel</span>
+                                <a href="https://github.com/MunProoo/WebRTC-Test" target="_blank">GitHub</a>
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">사내 문서 RAG | 문서 Q&A</h5>
+                            <p>
+                                Swagger·프로토콜·매뉴얼을 대상으로 Hybrid Retrieval(벡터 + BM25 + rerank) Q&amp;A를 구성하고 골든셋·회귀로 검색 품질 검증<br>
+                                <span class="project-tech">Python, Ollama, Chroma, BM25, Rerank</span>
                             </p>
                         </div>
                     </div>
+                    <h3 class="mb-4 mt-5">협업 / 오너십</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">쇼핑몰 MusinsaShop</h5>
-                            <p class="mb-2"><strong>2021.12 - 2022.03</strong> | <strong>서버,UI (100%)</strong></p>
-                            <p>기술 스택 : <br>Java8, Spring Framework ,Javascript, JSP, MySQL 5.7, Daum API, CKEditor 4, Google Chart, Git hub<br>
-                               <p>- 목적 : Spring을 이용한 쇼핑몰 구현</p> 
-                                <p><a href="https://github.com/MunProoo/SpringProject" target="_blank">👉repo</a></p>
-                            </p>
+                            <p class="mb-0">신규 단말 프로토콜을 동료와 범위를 나눠 설계·구현하고, 코드리뷰로 응답 지연·전송 페이로드를 줄이는 계약을 함께 확정</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p class="mb-0">SECON(킨텍스) 전시 일정에 맞춰 데모 기능을 개발·연동해 현장 시연·고객 검증을 지원하고, 제품 기능으로 이어질 수 있는 맞춤 구현을 수행</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Services End -->
+    <!-- Projects End -->
 
 
     <!-- Portfolio Start -->
@@ -371,242 +312,49 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Portfolio</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
             </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                    </ul>
-                </div>
-            </div>
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <a href="http://158.247.252.248:8080/" target="_blank"><p align="center"><strong>쇼핑몰 (MyMusinsa)</strong><br>로그인 : admin / 1234</p>
-                            <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">  -->
-                                <img class="img-fluid rounded w-100" src="img/spring_portfolio.png" alt="">
-                            <!-- </div> -->
+                    <div class="position-relative overflow-hidden mb-2 text-center">
+                        <a href="https://github.com/MunProoo/WebRTC-Test" target="_blank">
+                            <p class="mb-2"><strong>WebRTC-Test</strong><br>SFU · 화상 · DataChannel 채팅</p>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <a href="http://141.164.54.101/" target="_blank"><p align="center"><strong>업무 관리 서비스(BSMG)</string><br>로그인: admin / admin</p> 
-                            <img class="img-fluid rounded w-100" src="img/BSMG_portfolio.png" alt="">
+                    <div class="position-relative overflow-hidden mb-2 text-center">
+                        <a href="https://github.com/MunProoo" target="_blank">
+                            <p class="mb-2"><strong>GitHub</strong><br>github.com/MunProoo</p>
                         </a>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
+                    <div class="position-relative overflow-hidden mb-2 text-center">
+                        <a href="https://munprooo.github.io/" target="_blank">
+                            <p class="mb-2"><strong>Blog</strong><br>munprooo.github.io</p>
+                        </a>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
     <!-- Portfolio End -->
 
 
-    <!-- Testimonial Start -->
-    <!-- <div class="container-fluid py-5" id="testimonial">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start -->
-    <!-- <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Blog End -->
-
-
-    <!-- Contact Start -->
-    <!-- <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Contact End -->
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/MunProoo" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social" href="mailto:mjo5178@gmail.com"><i class="fa fa-envelope"></i></a>
             </div>
-            <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
+            <p class="m-0">&copy; MunProoo. Backend Engineer Portfolio.</p>
         </div>
     </div>
     <!-- Footer End -->
 
-    <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
@@ -615,12 +363,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
